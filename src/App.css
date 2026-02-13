@@ -1,0 +1,10 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Noto Sans", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+  --font3: "Noto Sans JP", sans-serif;
+  --font4: "Roboto", sans-serif;
+  --font5: "Cygre", sans-serif;
+}

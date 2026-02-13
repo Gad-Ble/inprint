@@ -1,0 +1,167 @@
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    clip-path: polygon(
+        0% 0%,      /* левый верх */
+        100% 0%,    /* правый верх */
+        100% 80%,   /* правый низ, до стрелки */
+        50% 100%,   /* центр низ (острие стрелки) */
+        0% 80%      /* левый низ, до стрелки */
+    );
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide {
+    padding-top: 65px;
+    color: white;
+}
+
+.slide h2 {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 183%;
+    text-transform: uppercase;
+    color: #fefefe;
+}
+
+.slide p {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 142%;
+    color: #fff;
+}
+
+.slideButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.buttonLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 389px;
+    height: 80px;
+    background: #feed00;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #272727;
+}
+.buttonLink:hover {
+    background: #dacb00;
+}
+
+.playButton {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playButton:hover path {
+    stroke: #dacb00;
+}
+
+.playButton:hover rect {
+    fill: #dacb00;
+}
+
+
+.slideInfo {
+    padding-right: 50px;
+    max-width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.slideInfo h2,
+.slideInfo p {
+    margin: 0;  /* Убираем отступы по умолчанию */
+    padding: 0;
+    padding-right: 30px;
+    text-align: left;  /* Текст внутри тоже слева */
+}
+
+.slideButtons {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.slideContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    background-color: #fff;
+    width: 990px;
+    height: 990px;
+    border-radius: 50%;
+}
+
+.slideContent img {
+    width: 95%;
+}
+
+.dotted {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #dacb00;
+    box-shadow: 0px 0px 15px #dacb00;
+}
+
+.arrow {
+    padding-bottom: 20px;
+}
